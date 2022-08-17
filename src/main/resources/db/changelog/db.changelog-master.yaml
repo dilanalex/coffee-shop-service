@@ -1,0 +1,56 @@
+databaseChangeLog:
+  - changeSet:
+      id: createTable
+      author: Dilan
+      changes:
+      - sqlFile:
+          dbms: postgresql
+          encoding: utf8
+          path: 01_create_customer_queue_item_tray_tables.sql
+          relativeToChangelogFile: true
+          splitStatements: true
+          stripComments: true
+  - changeSet:
+      id: Insert_Customer
+      author: Dilan
+      changes:
+      - sqlFile:
+          dbms: postgresql
+          encoding: utf8
+          path: 02_insert_into_customer_table.sql
+          relativeToChangelogFile: true
+          splitStatements: true
+          stripComments: true
+  - changeSet:
+      id: Insert_Customer_Queue
+      author: Dilan
+      changes:
+      - sqlFile:
+          dbms: postgresql
+          encoding: utf8
+          path: 03_insert_into_customerqueu_table.sql
+          relativeToChangelogFile: true
+          splitStatements: true
+          stripComments: true
+  - changeSet:
+      id: Insert_Tray
+      author: Dilan
+      changes:
+      - sqlFile:
+          dbms: postgresql
+          encoding: utf8
+          path: 04_insert_into_tray_table.sql
+          relativeToChangelogFile: true
+          splitStatements: true
+          stripComments: true
+  - changeSet:
+      id: Insert_Item
+      author: Dilan
+      changes:
+      - sqlFile:
+          dbms: postgresql
+          encoding: utf8
+          path: 05_insert_into_item_table.sql
+          relativeToChangelogFile: true
+          splitStatements: true
+          stripComments: true

@@ -1,0 +1,1 @@
+INSERT INTO public.customer_queue (cutomer_queue_id, queue_id) VALUES (300, 1);
